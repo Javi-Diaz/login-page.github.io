@@ -1,0 +1,88 @@
+/*GENERAL*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+	background: url("images/torre-eiffel2.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+}
+
+
+/*FORMULARIO*/
+.form-box{
+	width: 450px;
+	background: rgba(0, 1, 2, 0.61);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #FFF;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.form-box h1{
+	margin: 10px 10px;
+	font-size: 40px;
+}
+
+.form-box label{
+	font-size: 20px;
+	margin: 10px auto;
+	border-bottom: 2px solid #00DF00;
+}
+
+
+/* INPUTS */
+.form-box input[type="text"],.form-box input[type="email"],.form-box input[type="password"]{
+	display: block;
+	margin: 14px auto;
+	width: 50%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid #0175DE;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	transition: .5s;
+}
+
+
+.form-box input[type="submit"] {
+	display: block;
+	margin: 14px auto;
+	width: 30%;
+	background: transparent;
+	border: none;
+	border: 2px solid #00DF00;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* EFECTOS EN LOS INPUTS */
+.form-box input[type="text"]:focus,.form-box input[type="email"]:focus,.form-box input[type="password"]:focus{
+	width: 70%;
+	border: none;
+	border: 3px solid #00DF00;
+}
+
+.form-box input[type="text"]::placeHolder,.form-box input[type="email"]::placeHolder,.form-box input[type="password"]::placeHolder{
+	color: #BDBDBD;
+	}
+
+
+.form-box input[type="submit"]:hover{
+	background: #00DF00;
+	color: #000;
+}
